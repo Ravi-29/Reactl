@@ -3,11 +3,14 @@ import './App.css';
 
 function App() {
 
-  let [counter, setCounter] = useState(15)
+  let [counter, setCounter] = useState(10)
 
   //let counter = 15
 
   const addValue = () =>{
+    // console.log("Value Added", counter);
+    // setCounter(counter + 1)
+
     if (counter < 20) {
       console.log("Value Added", counter);
       setCounter(counter + 1);
@@ -18,13 +21,15 @@ function App() {
   }
     
     const removeValue = () =>{
+      // console.log("Value Removed", counter);
+      // setCounter(counter - 1)
+
       if (counter > 0) {
         console.log("Value Removed", counter);
       setCounter(counter - 1)
     } else {
-        console.log("Cannot exceed 00");
+        console.log("Cannot exceed 0");
     }
-      
   }
   
   return (
