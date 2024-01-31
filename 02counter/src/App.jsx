@@ -8,14 +8,23 @@ function App() {
   //let counter = 15
 
   const addValue = () =>{
-    console.log("Value Added", counter);
-    //counter = counter+1
-    setCounter(counter + 1)
+    if (counter < 20) {
+      console.log("Value Added", counter);
+      setCounter(counter + 1);
+  } else {
+      console.log("Cannot exceed 20");
+  }
+
   }
     
     const removeValue = () =>{
-      console.log("Value Removed", counter);
+      if (counter > 0) {
+        console.log("Value Removed", counter);
       setCounter(counter - 1)
+    } else {
+        console.log("Cannot exceed 00");
+    }
+      
   }
   
   return (
