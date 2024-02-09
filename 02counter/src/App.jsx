@@ -24,11 +24,11 @@ function App() {
       // console.log("Value Removed", counter);
       // setCounter(counter - 1)
 
-      if (counter > 0) {
+      if (counter > -5) {
         console.log("Value Removed", counter);
       setCounter(counter - 1)
     } else {
-        console.log("Cannot exceed 0");
+        console.log("Cannot exceed -5");
     }
   }
   
