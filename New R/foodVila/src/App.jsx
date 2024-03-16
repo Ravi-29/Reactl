@@ -30,20 +30,33 @@ const Header = () => {
   );
 }
 
+const burgerKing=
+  {
+    name: "Burger King",
+    Image: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/eqaon8guufklmil7ayhr",
+    cusines: ["Burger", "America"],
+    rating: "4.2"
+  }
+
+
   const RestrauntCard = () =>{
     return(
       <div className='card'>
-        <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/eqaon8guufklmil7ayhr"/>
-        <h2>Burger King</h2>
-        <h3>Burger, American</h3>
-        <h4>4.2 stars</h4>
+        <img src={burgerKing.Image}/>
+        <h2>{burgerKing.name}</h2>
+        <h3>{burgerKing.cusines.join(",")}</h3>
+        <h4>{burgerKing.rating}stars</h4>
       </div>
     )
   }
 
   const Body = () =>{
     return(
-      <div>
+      <div className='listitems'>
+        <RestrauntCard/>
+        <RestrauntCard/>
+        <RestrauntCard/>
+        <RestrauntCard/>
         <RestrauntCard/>
       </div>
     );

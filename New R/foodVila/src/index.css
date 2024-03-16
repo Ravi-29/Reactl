@@ -28,3 +28,7 @@
 .card> img{
   width: 100%;
 }
+
+.listitems{
+  display: flex;
+}
