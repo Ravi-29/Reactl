@@ -1,8 +1,11 @@
+// in contextProvider you can wraping up everything of context
+
 import React from "react";
 import UserContext from "./UserContext";
+import { useState } from "react";
 
 const UserContextProvider = ({children}) => {
-    const [user, setUser] = React.useState(null)
+    const [user, setUser] = useState(null)
     return(
         <UserContext.Provider value={{user, setUser}}>
         {children}
