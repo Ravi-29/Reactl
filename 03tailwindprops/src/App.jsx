@@ -13,9 +13,11 @@ function App() {
   return (
     <>
       <h1 className='bg-green-400 text-black p-4 rounded-xl mb-4'>Tailwind test</h1>
-      <Card username="Jhamlal" btnText="click me" />
-      <Card username="Laal Babu" />
-      <Card username="Baba Banarsi" btnText='Click Button' />
+      <Card username="Kolo Muani" btnText="click me" />
+      <Card username="Kylian Mbappé" btnText='Click Button' />
+      <Card username="Junior"  />
+      {/* <Card userName= "ddgs" someObje={newArr}/> */}
+      {/* <Card userName= "ddgs" someObje={myObj}/> */}
     </>
   )
 }

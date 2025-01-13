@@ -14,12 +14,14 @@ function App() {
     // setCounter((prevCounter) => prevCounter + 1)
     // setCounter((prevCounter) => prevCounter + 1)
 
-    if (counter < 20) {
-      console.log("Value Added", counter);
-      setCounter(counter + 1);
-  } else {
-      console.log("Cannot exceed 20");
-  }
+    setCounter(counter + 1);
+
+  //   if (counter < 20) {
+    // console.log("Value Added", counter);
+  //     setCounter(counter + 1);
+  // } else {
+  //     console.log("Cannot exceed 20");
+  // }
 
   }
     
@@ -28,7 +30,7 @@ function App() {
       // setCounter(counter - 1)
 
       if (counter > -5) {
-        console.log("Value Removed", counter);
+        // console.log("Value Removed", counter);
       setCounter(counter - 1)
     } else {
         console.log("Cannot exceed -5");
@@ -40,9 +42,9 @@ function App() {
     <h1>React !!!</h1>
     <h2>Counter value: {counter}</h2>
 
-    <button onClick={addValue}>Add value</button> {" "}
+      <button onClick={addValue}>Add value: {counter}</button> {" "}
     
-    <button onClick={removeValue}>Remove value</button>
+      <button onClick={removeValue}>Remove value: {counter}</button>
     <p>footer :{counter}</p>
     </>
   )
